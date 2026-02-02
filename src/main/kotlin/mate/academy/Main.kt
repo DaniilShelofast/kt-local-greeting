@@ -1,15 +1,13 @@
 package mate.academy
 
 fun greetUsers() {
-    var i = 0
-    while (i < Int.MAX_VALUE) {
+    while (true) {
         println("Please enter a name (or press Enter to quit):")
         val name = readLine();
-        if (name?.isEmpty() == true) {
+        if (name.isNullOrEmpty()) {
             break
         }
         println("Hello, $name!")
-        i++
     }
 }
 
